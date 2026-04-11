@@ -30,6 +30,8 @@ nav.solid{background:rgba(6,6,6,.96);backdrop-filter:blur(12px);border-bottom:1p
 .nav-links a{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.22em;color:rgba(242,237,228,.55);text-decoration:none;text-transform:uppercase;transition:color .3s;}
 .nav-links a:hover{color:var(--gold);}
 .nav-tel{font-family:'Cormorant Garamond',serif;font-size:.9rem;color:var(--silver);letter-spacing:.1em;text-decoration:none;}
+.nav-diag{font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.1em;color:var(--gold);background:transparent;padding:10px 12px;border:1px solid rgba(201,168,76,.42);text-decoration:none;text-transform:uppercase;transition:all .3s;white-space:nowrap;}
+.nav-diag:hover{border-color:var(--gold);background:rgba(201,168,76,.08);}
 .nav-reserve{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.25em;color:var(--black);background:linear-gradient(135deg,var(--gold-l),var(--gold));padding:10px 22px;text-decoration:none;text-transform:uppercase;transition:all .3s;white-space:nowrap;}
 .nav-reserve:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,76,.35);}
 @media(max-width:768px){nav{padding:14px 20px;}.nav-links{display:none;}}
@@ -403,7 +405,10 @@ footer{background:var(--black);padding:36px 48px;border-top:1px solid rgba(255,2
     <li><button onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;cursor:pointer;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.22em;color:rgba(242,237,228,.55);text-transform:uppercase;transition:color .3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(242,237,228,.55)'">Features</button></li>
     <li><button onclick="document.getElementById('access').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;cursor:pointer;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.22em;color:rgba(242,237,228,.55);text-transform:uppercase;transition:color .3s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(242,037,228,.55)'">Access</button></li>
   </ul>
-  <a href="https://lin.ee/XyF0R493" class="nav-reserve" target="_blank">ご予約</a>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <a href="https://ayakafragments.github.io/STELLA/FlavorHoroscope.html" class="nav-diag" target="_blank">シーシャ診断</a>
+    <a href="https://lin.ee/XyF0R493" class="nav-reserve" target="_blank">ご予約</a>
+  </div>
 </nav>
 
 <!-- ① HERO -->
@@ -625,6 +630,11 @@ footer{background:var(--black);padding:36px 48px;border-top:1px solid rgba(255,2
         <div class="fcard"><span class="fcard-icon">🍵</span><span class="fcard-name">ミルクティー</span></div>
         <div class="fcard"><span class="fcard-icon">🍵</span><span class="fcard-name">抹茶</span></div>
         <div class="fcard"><span class="fcard-icon">🍠</span><span class="fcard-name">スイートポテト</span></div>
+      </div>
+
+      <!-- FLAVOR DIAGNOSIS BUTTON -->
+      <div style="text-align:center;margin:48px 0 0;">
+        <a href="https://ayakafragments.github.io/STELLA/FlavorHoroscope.html" target="_blank" class="btn-outline" style="font-size:.68rem;display:inline-block;">✦ パーソナルシーシャフレーバー診断</a>
       </div>
 
       <!-- RECOMMEND MIX -->
